@@ -1,24 +1,21 @@
 import { renderNav } from "./nav.js";
 import { renderHome } from "./home.js";
-import { renderMenu } from "./menu.js";
+import { renderJogo } from "./jogo.js";
 import { renderContact } from "./contact.js";
-
-const content = document.getElementById("content");
-
 
 
 const home = function () {
-  content.innerHTML = "";
+  document.getElementById("content").innerHTML = "";
   renderNav();
   renderHome();
 };
-const menu = function () {
-  content.innerHTML = "";
+const jogo = function () {
+  document.getElementById("content").innerHTML = "";
   renderNav();
-  renderMenu();
+  renderJogo();
 };
 const contact = function () {
-  content.innerHTML = "";
+  document.getElementById("content").innerHTML = "";
   renderNav();
   renderContact();
 };
@@ -29,6 +26,6 @@ const initialize = function() {
 }
 
 export {home as home}
-export {menu as menu}
+export {jogo as jogo}
 export {contact as contact}
 export {initialize as initialize}
